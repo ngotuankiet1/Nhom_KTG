@@ -14,7 +14,7 @@
         <input type="text" name="txtUseName"><br><br>
         <label for="">Password:</label>
         <input type="password" name="txtpassword"><br><br>
-        <button type="submit" name="btnlogin"></button>
+        <button type="submit" name="btnlogin">Mật Khẩu</button>
     </form>
 </body>
 
