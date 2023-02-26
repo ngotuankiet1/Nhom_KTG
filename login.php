@@ -1,20 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<?php
+session_start();
+require 'database/array.php';
+if (isset($_POST['login'])) {
+    $username = $_POST['txtUseName'];
+    $password = $_POST['txtpassword'];
+    if ($username == $info_login[1]['txtUseName'] && $password == $info_login[1]['txtpassword']) {
+        $_SESSION['login'] = true;
+        header("Location: index.php");
+    } else {
+        echo 'tk mk sai ';
+    }
+}
+?>
+<html>
 
 <body>
-    <form action="" method="POST">
+    <form method="POST">
         <label for="">Tên đăng nhập:</label>
         <input type="text" name="txtUseName"><br><br>
         <label for="">Mật khẩu:</label>
         <input type="password" name="txtpassword"><br><br>
-        <button type="submit" name="btnlogin">Đăng nhập</button>
+        <input type="submit" name="login" value="Đăng nhập"/>
     </form>
 </body>
 
