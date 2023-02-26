@@ -10,11 +10,11 @@
 
 <body>
     <form action="" method="POST">
-        <label for="">Username</label>
+        <label for="">Tên đăng nhập:</label>
         <input type="text" name="txtUseName"><br><br>
-        <label for="">Password:</label>
+        <label for="">Mật khẩu:</label>
         <input type="password" name="txtpassword"><br><br>
-        <button type="submit" name="btnlogin">Mật Khẩu</button>
+        <button type="submit" name="btnlogin"></button>
     </form>
 </body>
 
