@@ -11,9 +11,10 @@
 <body>
     <form action="" method="POST">
         <label for="">Username</label>
-        <input type="text" name="txtUseName">
-        <label for="">Password</label>
-        <input type="password" name="txtmatkhau">
+        <input type="text" name="txtUseName"><br><br>
+        <label for="">Password:</label>
+        <input type="password" name="txtpassword"><br><br>
+        <button type="submit" name="btnlogin"></button>
     </form>
 </body>
 
